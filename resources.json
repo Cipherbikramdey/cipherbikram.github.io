@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Networking Basics Notes",
+    "type": "notes",
+    "path": "resources/notes/networking_basics.md",
+    "topic": "Networking",
+    "date": "2025-08-18",
+    "tags": [
+      "notes",
+      "basics"
+    ]
+  },
+  {
+    "name": "Python Hello World",
+    "type": "code",
+    "path": "resources/code/hello_world.py",
+    "topic": "Programming",
+    "date": "2025-08-18",
+    "tags": [
+      "code",
+      "python"
+    ]
+  },
+  {
+    "name": "Study Plan (PDF)",
+    "type": "pdf",
+    "path": "resources/pdfs/study_plan.pdf",
+    "topic": "Planning",
+    "date": "2025-08-18",
+    "tags": [
+      "pdf",
+      "plan"
+    ]
+  },
+  {
+    "name": "Network Diagram",
+    "type": "image",
+    "path": "resources/images/sample_diagram.png",
+    "topic": "Networking",
+    "date": "2025-08-18",
+    "tags": [
+      "diagram",
+      "image"
+    ]
+  }
+]

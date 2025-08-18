@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cipher Bikram Dey</title>
+  <meta name="description" content="Cipher Bikram Dey — Ebooks, Techniques, Gallery, Tools, Blogs" />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-black text-gray-200 font-sans selection:bg-purple-700/40">
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-purple-900 to-purple-800/80 backdrop-blur sticky top-0 z-50 border-b border-purple-700/30">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between h-16 items-center">
+        <a href="#home" class="text-2xl font-extrabold text-purple-300 hover:scale-105 transition">CipherBikram</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-xl bg-purple-700/40 active:scale-95">☰</button>
+        <div id="navLinks" class="space-x-6 hidden md:flex">
+          <a href="#home" class="hover:text-purple-300 navlink">Home 🏠</a>
+          <a href="#ebooks" class="hover:text-purple-300 navlink">Ebooks 📚</a>
+          <a href="#techniques" class="hover:text-purple-300 navlink">Techniques 💻</a>
+          <a href="#gallery" class="hover:text-purple-300 navlink">Cipher Gallery 🖼</a>
+          <a href="#tools" class="hover:text-purple-300 navlink">Tools 🛠</a>
+          <a href="#blogs" class="hover:text-purple-300 navlink">Blogs 📰</a>
+          <a href="#about" class="hover:text-purple-300 navlink">About Me 👤</a>
+        </div>
+      </div>
+      <div id="mobileNav" class="md:hidden hidden pb-3 space-y-2">
+        <a href="#home" class="block px-3 py-2 rounded-lg bg-purple-900/50 navlink">Home 🏠</a>
+        <a href="#ebooks" class="block px-3 py-2 rounded-lg bg-purple-900/50 navlink">Ebooks 📚</a>
+        <a href="#techniques" class="block px-3 py-2 rounded-lg bg-purple-900/50 navlink">Techniques 💻</a>
+        <a href="#gallery" class="block px-3 py-2 rounded-lg bg-purple-900/50 navlink">Cipher Gallery 🖼</a>
+        <a href="#tools" class="block px-3 py-2 rounded-lg bg-purple-900/50 navlink">Tools 🛠</a>
+        <a href="#blogs" class="block px-3 py-2 rounded-lg bg-purple-900/50 navlink">Blogs 📰</a>
+        <a href="#about" class="block px-3 py-2 rounded-lg bg-purple-900/50 navlink">About Me 👤</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-[80vh] flex flex-col justify-center items-center bg-gradient-to-b from-black to-purple-950 text-center p-8" data-aos="zoom-in">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-purple-400 drop-shadow">Welcome to Cipher Bikram's Hub</h1>
+    <p class="mt-4 text-lg text-gray-300 max-w-2xl">Explore ebooks, tools, galleries, blogs, and techniques that help you in your tech journey.</p>
+    <div class="mt-8 flex gap-3 flex-wrap">
+      <a href="#ebooks" class="px-5 py-2 rounded-2xl bg-purple-700 hover:bg-purple-600 active:scale-95 transition shadow-lg">Browse Ebooks</a>
+      <a href="#techniques" class="px-5 py-2 rounded-2xl border border-purple-500/60 hover:bg-purple-900/40 active:scale-95 transition">Try Techniques</a>
+    </div>
+  </section>
+
+  <!-- Ebooks -->
+  <section id="ebooks" class="py-20 px-6 bg-black" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold text-purple-400">📚 Ebooks</h2>
+        <a href="#home" class="text-sm text-purple-300 underline decoration-dotted">⬅ Home</a>
+      </div>
+      <div id="ebooksList" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- Techniques -->
+  <section id="techniques" class="py-20 px-6 bg-gradient-to-b from-purple-950 to-black" data-aos="fade-right">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold text-purple-400">💻 Techniques</h2>
+        <a href="#home" class="text-sm text-purple-300 underline decoration-dotted">⬅ Home</a>
+      </div>
+      <div id="techniquesList" class="space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 px-6 bg-black" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold text-purple-400">🖼 Cipher Gallery</h2>
+        <a href="#home" class="text-sm text-purple-300 underline decoration-dotted">⬅ Home</a>
+      </div>
+      <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section id="tools" class="py-20 px-6 bg-gradient-to-b from-black to-purple-950" data-aos="fade-left">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold text-purple-400">🛠 Tools</h2>
+        <a href="#home" class="text-sm text-purple-300 underline decoration-dotted">⬅ Home</a>
+      </div>
+      <ul id="toolsList" class="list-disc ml-6 space-y-2"></ul>
+    </div>
+  </section>
+
+  <!-- Blogs -->
+  <section id="blogs" class="py-20 px-6 bg-black" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold text-purple-400">📰 Blogs</h2>
+        <a href="#home" class="text-sm text-purple-300 underline decoration-dotted">⬅ Home</a>
+      </div>
+      <div id="blogsList" class="grid md:grid-cols-2 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-gradient-to-b from-purple-950 to-black" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-purple-400 mb-6">👤 About Me</h2>
+      <p class="text-gray-300 mb-6">I am Cipher Bikram Dey, a student of Computer Science with interests in Cybersecurity, Networking, and System Administration.</p>
+      <div class="flex gap-4 text-2xl">
+        <a aria-label="Facebook" href="https://facebook.com" target="_blank" class="hover:scale-110 transition">📘</a>
+        <a aria-label="LinkedIn" href="https://linkedin.com" target="_blank" class="hover:scale-110 transition">💼</a>
+        <a aria-label="Instagram" href="https://instagram.com" target="_blank" class="hover:scale-110 transition">📸</a>
+        <a aria-label="GitHub" href="https://github.com/Cipherbikramdey" target="_blank" class="hover:scale-110 transition">🐙</a>
+        <a aria-label="Medium" href="https://medium.com" target="_blank" class="hover:scale-110 transition">✍️</a>
+      </div>
+      <a href="#home" class="mt-6 inline-block text-sm text-purple-300 underline decoration-dotted">⬅ Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-900/80 text-center py-4 text-sm text-gray-300 border-t border-purple-700/30">
+    © 2025 Cipher Bikram Dey | Built with Tailwind CSS
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden px-4 py-2 rounded-xl bg-purple-800 text-white shadow-xl"></div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ duration: 800, once: true });
+
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      if (menuBtn) menuBtn.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+
+      // Highlight active nav on scroll
+      const links = document.querySelectorAll('.navlink');
+      const sections = ['home','ebooks','techniques','gallery','tools','blogs','about'].map(id => document.getElementById(id));
+      const setActive = () => {
+        const y = window.scrollY + 120;
+        sections.forEach((sec, i) => {
+          if (!sec) return;
+          const top = sec.offsetTop, bottom = top + sec.offsetHeight;
+          const active = y >= top && y < bottom;
+          links.forEach(a => {
+            if (a.getAttribute('href') === '#' + sec.id) a.classList.toggle('text-white', active);
+          });
+        });
+      };
+      window.addEventListener('scroll', setActive); setActive();
+
+      // Load dynamic lists
+      loadJSON('/ebooks.json', renderEbooks, 'ebooksList');
+      loadJSON('/tools.json', renderTools, 'toolsList');
+      loadJSON('/gallery.json', renderGallery, 'galleryGrid');
+      loadJSON('/blogs.json', renderBlogs, 'blogsList');
+
+      // Techniques data (inline for quick editing)
+      const techniques = [
+        { name: 'Ping Google', code: 'ping google.com' },
+        { name: 'Check IP Config', code: 'ipconfig /all' },
+        { name: 'Active Connections', code: 'netstat -ano' },
+        { name: 'Trace Route', code: 'tracert 8.8.8.8' }
+      ];
+      renderTechniques(techniques);
+    });
+
+    function loadJSON(path, cb, elementId){
+      fetch(path).then(r => r.json()).then(data => cb(data, elementId)).catch(() => {
+        const el = document.getElementById(elementId);
+        if (el) el.innerHTML = '<p class="text-gray-400">No data found. Upload files and update the JSON.</p>';
+      });
+    }
+
+    function renderEbooks(items, elementId){
+      const wrap = document.getElementById(elementId);
+      wrap.innerHTML = items.map(i => `
+        <a href="${i.file}" target="_blank" class="group block rounded-2xl border border-purple-700/30 p-4 hover:border-purple-500/60 hover:shadow-lg hover:shadow-purple-900/30 transition">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold text-purple-300">${i.name}</h3>
+              <p class="text-xs text-gray-400 break-all">${i.file}</p>
+            </div>
+            <span class="text-sm opacity-0 group-hover:opacity-100 transition">⤓</span>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    function renderTools(items, elementId){
+      const list = document.getElementById(elementId);
+      list.innerHTML = items.map(i => `<li><a class="hover:text-purple-300 underline decoration-dotted" target="_blank" href="${i.url}">${i.name}</a></li>`).join('');
+    }
+
+    function renderGallery(items, elementId){
+      const grid = document.getElementById(elementId);
+      grid.innerHTML = items.map(i => `
+        <a href="${i.src}" download class="group block overflow-hidden rounded-2xl border border-purple-700/30 hover:border-purple-500/60 transition">
+          <img src="${i.src}" alt="${i.name}" class="w-full aspect-video object-cover group-hover:scale-105 transition" />
+          <div class="p-2 text-center text-sm text-gray-300">${i.name}</div>
+        </a>
+      `).join('');
+    }
+
+    function renderBlogs(items, elementId){
+      const grid = document.getElementById(elementId);
+      grid.innerHTML = items.map(i => `
+        <article class="rounded-2xl border border-purple-700/30 p-4 hover:border-purple-500/60 transition">
+          <h3 class="text-lg font-semibold text-purple-300">${i.title}</h3>
+          <a href="${i.href}" target="_blank" class="text-sm text-purple-400 underline decoration-dotted">Read →</a>
+        </article>
+      `).join('');
+    }
+
+    function renderTechniques(items){
+      const list = document.getElementById('techniquesList');
+      list.innerHTML = items.map(t => `
+        <div class="bg-gray-900/70 p-4 rounded-2xl border border-purple-700/30 flex flex-col md:flex-row md:items-center md:justify-between gap-3 hover:border-purple-500/60 transition">
+          <div>
+            <h3 class="text-purple-300 font-semibold">${t.name}</h3>
+            <code class="text-green-400 break-all">${t.code}</code>
+          </div>
+          <button class="copyBtn px-3 py-1 rounded-xl bg-purple-700 hover:bg-purple-600 active:scale-95 transition text-white" data-code="${encodeURIComponent(t.code)}">Copy</button>
+        </div>
+      `).join('');
+      document.querySelectorAll('.copyBtn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const code = decodeURIComponent(btn.getAttribute('data-code'));
+          navigator.clipboard.writeText(code).then(() => showToast('Copied: ' + code));
+        });
+      });
+    }
+
+    function showToast(msg){
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.remove('hidden');
+      t.classList.add('animate-bounce');
+      setTimeout(() => { t.classList.add('hidden'); t.classList.remove('animate-bounce'); }, 1600);
+    }
+  </script>
+</body>
+</html>

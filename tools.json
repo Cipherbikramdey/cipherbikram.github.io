@@ -1,0 +1,10 @@
+[
+  {
+    "name": "OWASP ZAP",
+    "url": "https://github.com/zaproxy/zaproxy"
+  },
+  {
+    "name": "SQLMap",
+    "url": "https://github.com/sqlmapproject/sqlmap"
+  }
+]
