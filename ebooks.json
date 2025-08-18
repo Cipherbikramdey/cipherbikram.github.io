@@ -5,10 +5,10 @@
   },
   {
     "name": "Advanced Bash Shell Scripting Guide",
-    "file": "/ebooks/Advanced-Bash-Shell-Scripting-Gude.pdf"
+    "file": "/ebooks/Advanced-Bash-Shell-Scripting-Guide.pdf"
   },
-   {
-    "name": "Android-Payload",
-    "file": "/ebooks/Android-Payload"
+  {
+    "name": "Android Payload",
+    "file": "/ebooks/Android-Payload.pdf"
   }
 ]
