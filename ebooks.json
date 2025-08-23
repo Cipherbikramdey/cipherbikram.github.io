@@ -10,5 +10,27 @@
   {
     "name": "Android Payload",
     "file": "/ebooks/Android-Payload.pdf"
+  },
+
+   {
+    "name": "Full-Stack-Web-Attack",
+    "file": "/ebooks/Full-Stack-Web-Attack.pdf"
+  },
+   {
+    "name": "Hacking-The-Art-of-Exploitation-(2nd ed. 2008)-Erickson",
+    "file": "/ebooks/Hacking-The-Art-of-Exploitation-(2nd ed. 2008)-Erickson.pdf"
+  },
+ {
+    "name": "Pentest-Cheat-sheet-for-Hackers)",
+    "file": "/ebooks/Pentest-Cheat-sheet-for-Hackers.pdf"
+  },
+ {
+    "name": "powershell-for-pentesters",
+    "file": "/ebooks/powershell-for-pentesters.pdf"
+  },
+ {
+    "name": "Recon-With-AI",
+    "file": "/ebooks/Recon-With-AI.pdf"
   }
+
 ]
