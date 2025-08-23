@@ -31,6 +31,10 @@
  {
     "name": "Recon-With-AI",
     "file": "/ebooks/Recon-With-AI.pdf"
+  },
+ {
+    "name": "bash_scripting",
+    "file": "/ebooks/bash_scripting.pdf"
   }
 
 ]
